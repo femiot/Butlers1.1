@@ -20,4 +20,3 @@
   <preference name="SplashScreenDelay" value="3000" />
 </widget>
 
-<gap:plugin name="org.li8.inappbrowser" version="0.1" />
