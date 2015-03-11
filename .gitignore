@@ -4,6 +4,6 @@
 node_modules/
 platforms/
 plugins/
-confg.xml/
+config.xml/
 hooks/
 scss/
