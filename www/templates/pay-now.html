@@ -1,0 +1,47 @@
+<ion-view view-title="Make Payment">
+  <ion-content>
+		
+<!-- 	<div class="list list-inset">
+	  <label class="item item-input">
+	    <input type="number" placeholder="Amount">
+	  </label>
+	</div>
+
+	
+	<div class="row">
+		<div class="col">
+			<a href="#/app/response">
+				<button class="button button-block button-light">
+		  		Pay
+				</button>
+			</a>
+		</div>
+	</div> -->
+
+	<div class="row">
+		<div class="col">
+		    
+		    <form id="userForm" name="userForm" novalidate>
+				
+	  			<label class="item item-input" show-errors>
+						<input type="number" class="item item-input" name="Amount" ng-model="payment.Amount" required placeholder="Amount" />
+					</label>
+					<p class="help-block" ng-if="userForm.Amount.$error.required">Amount as calculated by invoice amount + tip</p>
+
+
+				<div class="submit-button" ng-click="save()">
+					<button class="button button-block button-light" ng-model="Response">
+						Make Payment
+					</button>
+				</div>
+
+			</form> 
+
+			<div ng-show="Response">{{Response}}</div>
+
+	  </div>
+	</div>
+
+
+  </ion-content>
+</ion-view>
